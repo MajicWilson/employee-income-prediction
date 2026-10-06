@@ -1,3 +1,5 @@
+![Project overview: predicting employee monthly income](figures/project_cover.png)
+
 # Predicting Employee Monthly Income with Machine Learning
 
 An end-to-end regression project that predicts an employee's monthly income (GHS) from their characteristics. It covers data cleaning, exploratory analysis, feature engineering and model comparison, and it is built around a careful evaluation design: no leakage from the test set, repeated cross-validation, paired model comparisons, bootstrap confidence intervals and a fairness check.
