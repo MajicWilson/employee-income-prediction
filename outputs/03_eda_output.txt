@@ -1,0 +1,87 @@
+saved figures/fig1_income_distribution.png
+saved figures/fig2_income_by_education.png
+saved figures/fig3_income_by_department.png
+saved figures/fig4_experience_vs_income.png
+saved figures/fig5_income_by_job_level.png
+saved figures/fig6_performance_vs_income.png
+
+=== Monthly income summary ===
+count      685.00
+mean     12379.28
+std       3107.86
+min       4937.25
+25%      10141.08
+50%      12299.51
+75%      14566.51
+max      20612.73
+skewness 0.10; Shapiro-Wilk p = 0.0062
+
+=== Income by Education ===
+             count     mean   median     std     min      max
+Education                                                    
+High School     72  11077.0  10828.0  3210.0  5520.0  18978.0
+Diploma         92  11383.0  11855.0  2983.0  5144.0  19263.0
+Bachelor's     265  12064.0  12123.0  3045.0  4937.0  19549.0
+Master's       170  13165.0  12935.0  2702.0  6945.0  20613.0
+PhD             74  14214.0  14373.0  3030.0  7168.0  20104.0
+Kruskal-Wallis H = 57.19, p = 1.13e-11;  one-way ANOVA F = 16.83, p = 3.74e-13
+
+=== Income by Department ===
+            count     mean   median     std     min      max
+Department                                                  
+Marketing     131  12037.0  11972.0  2980.0  5442.0  20104.0
+HR            144  12133.0  12118.0  3105.0  5763.0  20209.0
+Finance       141  12862.0  12416.0  3381.0  4937.0  20613.0
+Operations    140  12374.0  12474.0  3281.0  5144.0  19148.0
+IT            129  12479.0  12509.0  2678.0  7175.0  18978.0
+Kruskal-Wallis H = 5.34, p = 0.254;  one-way ANOVA F = 1.51, p = 0.197
+
+=== Income by Job_Level ===
+           count     mean   median     std      min      max
+Job_Level                                                   
+1            120   8312.0   8238.0  1486.0   4937.0  12299.0
+2            166  10810.0  10781.0  1623.0   6740.0  14846.0
+3            196  12687.0  12548.0  1489.0   8507.0  16826.0
+4            140  15015.0  15041.0  1576.0   9818.0  18651.0
+5             63  17448.0  17214.0  1434.0  14447.0  20613.0
+Kruskal-Wallis H = 518.39, p = 7.07e-111;  one-way ANOVA F = 530.76, p = 1.87e-207
+
+=== Income by Gender ===
+        count     mean   median     std     min      max
+Gender                                                  
+Female    339  12435.0  12275.0  3250.0  5144.0  20554.0
+Male      346  12325.0  12321.0  2965.0  4937.0  20613.0
+Kruskal-Wallis H = 0.11, p = 0.746;  one-way ANOVA F = 0.21, p = 0.644
+
+=== Experience and performance vs income ===
+Experience: Pearson r = 0.868 (p = 2.45e-205); slope = 311.7 GHS per year; n = 669
+Performance: Pearson r = 0.112 (p = 0.00362); slope = 512.3 GHS per point; n = 671
+Performance: Spearman rho = 0.109 (p = 0.0046)
+
+=== Education within job level: does education add anything once job level is known? (median income) ===
+Education  High School  Diploma  Bachelor's  Master's      PhD
+Job_Level                                                     
+1               7527.0   7365.0      7954.0    9290.0  10002.0
+2               9149.0   9495.0     10310.0   11491.0  12353.0
+3              11441.0  11941.0     12532.0   13262.0  14339.0
+4              13972.0  13454.0     14829.0   15745.0  16298.0
+5              16366.0  16746.0     17244.0   17198.0  18135.0
+
+=== Education mix by job level (counts) ===
+Education  High School  Diploma  Bachelor's  Master's  PhD
+Job_Level                                                 
+1                   13       18          51        22   13
+2                   19       20          63        43   18
+3                   20       29          75        56   13
+4                   13       17          52        37   20
+5                    7        8          24        12   10
+
+=== Correlation matrix (pairwise complete) ===
+                    Age  Years_Experience  Job_Level  Hours_Per_Week  Performance_Score  Training_Hours  Monthly_Income
+Age                1.00              0.96       0.78            0.02               0.05            0.05            0.84
+Years_Experience   0.96              1.00       0.81            0.05               0.04            0.05            0.87
+Job_Level          0.78              0.81       1.00            0.04              -0.01            0.09            0.87
+Hours_Per_Week     0.02              0.05       0.04            1.00              -0.05            0.07            0.04
+Performance_Score  0.05              0.04      -0.01           -0.05               1.00            0.02            0.11
+Training_Hours     0.05              0.05       0.09            0.07               0.02            1.00            0.06
+Monthly_Income     0.84              0.87       0.87            0.04               0.11            0.06            1.00

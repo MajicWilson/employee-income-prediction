@@ -1,0 +1,49 @@
+=== Paired cross-validation comparison (15 folds, RMSE in GHS) ===
+Linear Regression: mean 909.5; standard error of the mean 16.4
+Ridge (alpha=10): mean 908.6; difference vs Linear = -0.8 (SE 2.1); Linear better in 8 of 15 folds
+Gradient Boosting (tuned): mean 944.2; difference vs Linear = +34.8 (SE 6.9); Linear better in 14 of 15 folds
+
+=== Linear Regression test-set metrics with bootstrap 95% intervals (2,000 resamples) ===
+  MAE: 623.809  (95% interval 538.590 to 706.488)
+  RMSE: 815.837  (95% interval 711.695 to 911.894)
+  R2: 0.932  (95% interval 0.908 to 0.949)
+
+=== Linear Regression coefficients in GHS per natural unit ===
+                          GHS                                  meaning
+Job_Level              1196.2                            per job level
+Education               765.5  per education step (High School -> PhD)
+Performance_Score       441.3                    per performance point
+Department_Operations  -395.8                    Operations vs Finance
+Department_Marketing   -347.3                     Marketing vs Finance
+Department_HR          -238.9                            HR vs Finance
+Department_IT           202.7                            IT vs Finance
+Years_Experience        173.7                   per year of experience
+Career_Start_Age         37.6           per year older at career start
+Experience_per_Level     13.2   per extra year of experience per level
+Hours_Per_Week            2.0                          per weekly hour
+Training_Hours           -0.2                        per training hour
+
+=== Test-set errors by gender (gender is NOT a model input) ===
+         n    MAE  mean_error
+gender                       
+Female  67  692.0        21.0
+Male    70  558.0        53.0
+
+=== Example prediction ===
+Model fitted on training set only: GHS 13,342.49
+Final model refitted on all 685 employees: GHS 13,299.11
+Rough 80% range from test-set errors: GHS 12,291 to 14,414
+Intercept (average employee on scaled inputs): GHS 10,964
+Contributions of each input relative to that average (GHS):
+Education                2277.0
+Years_Experience         -687.0
+Performance_Score         285.0
+Job_Level                 257.0
+Career_Start_Age          141.0
+Department_IT             112.0
+Experience_per_Level      -50.0
+Hours_Per_Week             -0.0
+Training_Hours              0.0
+Department_HR              -0.0
+Department_Marketing       -0.0
+Department_Operations      -0.0

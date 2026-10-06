@@ -1,0 +1,10 @@
+rule,rows_or_cells_affected,detail
+1. Remove identical duplicate rows,12,712 -> 700 rows
+2a. Standardise Gender spellings,8,"{'F': 'Female', 'female': 'Female', 'M': 'Male'}"
+2b. Standardise Department spellings,8,"{'Human Resources': 'HR', 'I.T.': 'IT', 'Mktg': 'Marketing', 'finance': 'Finance'}"
+3a. Impossible Age (<18 or >75) set to missing,5,"values: [5.0, 5.0, 120.0, 120.0, 150.0]"
+3b. Impossible Hours_Per_Week (<10 or >80) set to missing,5,"values: [-10, -10, 100, 140, 140]"
+4a. Drop rows with missing Monthly_Income,10,"IDs: ['EMP0094', 'EMP0231', 'EMP0245', 'EMP0285', 'EMP0315', 'EMP0379', 'EMP0429', 'EMP0568', 'EMP0660', 'EMP0665']"
+"4b. Drop rows with unreliable extreme Monthly_Income (> GHS 30,000)",5,"IDs and values: [['EMP0046', 136628.0], ['EMP0395', 73003.04], ['EMP0482', 110365.36], ['EMP0501', 107285.84], ['EMP0608', 154744.4]]"
+"5. Convert Age, Years_Experience, Hours_Per_Week, Training_Hours to whole numbers",0,type change only; categorical columns stored as text
+6. Check: Age - Years_Experience < 16 after cleaning,0,should be 0

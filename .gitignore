@@ -1,0 +1,12 @@
+# Dataset: not included in the repository (see README, "The data")
+data/*.csv
+
+# Generated documents
+*.docx
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

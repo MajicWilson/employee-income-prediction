@@ -1,0 +1,8 @@
+{
+  "Baseline (training mean)": 12379.852591240875,
+  "Linear Regression": 13342.48747345199,
+  "Ridge Regression": 13298.08954673147,
+  "Decision Tree": 12312.269999999999,
+  "Random Forest": 12720.983605530215,
+  "Gradient Boosting": 13150.189676125628
+}

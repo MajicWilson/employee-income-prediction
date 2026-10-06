@@ -1,0 +1,13 @@
+,GHS,meaning
+Job_Level,1196.2,per job level
+Education,765.5,per education step (High School -> PhD)
+Performance_Score,441.3,per performance point
+Department_Operations,-395.8,Operations vs Finance
+Department_Marketing,-347.3,Marketing vs Finance
+Department_HR,-238.9,HR vs Finance
+Department_IT,202.7,IT vs Finance
+Years_Experience,173.7,per year of experience
+Career_Start_Age,37.6,per year older at career start
+Experience_per_Level,13.2,per extra year of experience per level
+Hours_Per_Week,2.0,per weekly hour
+Training_Hours,-0.2,per training hour
