@@ -31,7 +31,7 @@ EDU_ORDER = ["High School", "Diploma", "Bachelor's", "Master's", "PhD"]
 TARGET = "Monthly_Income"
 # Employee_ID is an identifier and is never a predictor.
 # Gender is excluded: it shows no relationship with income (Kruskal-Wallis p = 0.75; adjusted p = 0.82) and using it
-# to set pay predictions raises fairness concerns (an AI-suggested change that I checked against the data).
+# to set pay predictions raises fairness concerns (checked against the data).
 RAW_PREDICTORS = ["Age", "Education", "Years_Experience", "Department", "Job_Level",
                   "Hours_Per_Week", "Performance_Score", "Training_Hours"]
 

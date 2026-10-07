@@ -154,10 +154,6 @@ Figures are written to `figures/` and tables and logs to `outputs/`. Results are
 └── README.md
 ```
 
-## Use of AI
-
-This project was built with the help of Claude (Anthropic), which wrote and ran much of the analysis code under my direction. I reviewed the results and decisions. I also consulted separate AI instances on data quality, feature engineering and model selection, checked their claims against the data, and rejected or modified several suggestions where the evidence did not support them.
-
 ## Author
 
 **Wilson Gyebi Asante**, MSc Data Analytics, University of Ghana
